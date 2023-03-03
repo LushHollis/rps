@@ -2,6 +2,7 @@ const random=(min,max)=>{return Math.floor(Math.random() * (max - min + 1) + min
 let results=document.getElementById('results');
 
 function playGame(userinput){
+    document.getElementById("userpick").innerHTML=`You pick ${userinput}.`;
     let compinput;
     switch (random(1,3)){
         case 1:
@@ -17,6 +18,7 @@ function playGame(userinput){
             console.warn("default in switch");
             compinput="rock";
     }
+    document.getElementById("comppick").innerHTML=`The computer picks ${compinput}.`;
 
     if (userinput=="rock"){
         if (compinput=="rock"){
