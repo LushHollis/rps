@@ -3,9 +3,14 @@ html{
     text-align:center;
 }
 
-.row {
+.row{
     display: flex;
 }
-.column {
+.column{
     flex: 50%;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
